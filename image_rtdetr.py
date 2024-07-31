@@ -21,7 +21,7 @@ with torch.no_grad():
 
 # Post-process the outputs
 results = image_processor.post_process_object_detection(outputs, target_sizes=torch.tensor([image.size[::-1]]), threshold=0.3)
-print(f'{len(results[0]['labels'])} detected')
+len(results[0]['labels'])
 
 # Draw bounding boxes on the image
 draw = ImageDraw.Draw(image)

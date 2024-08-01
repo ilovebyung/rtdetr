@@ -3,7 +3,7 @@ from ultralytics import YOLO
 import time
 
 # Load the YOLOv8 model
-model = YOLO('yolov8n.pt')  # You can change this to other YOLOv8 models if needed
+model = YOLO('yolov10n.pt')  # You can change this to other YOLOv8 models if needed
 
 # Open the video file
 video_path = "park.mp4"
